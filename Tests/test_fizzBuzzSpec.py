@@ -30,9 +30,9 @@ class FizzBuzzGame():
     def Speak(self, number):
         result = ""
 
-        for key in self._lookup:
+        for key, value in self._lookup.items():
             if(number % key == 0):
-                result = result + self._lookup[key]
+                result = result + value
 
         if (result != ""):
             return result
